@@ -5,8 +5,8 @@ using UnityEngine;
 public class Talisman : MonoBehaviour
 {
     public float TalismanSpeed = 3f;
-    public float lifeTime = 5f;
-    public float hitLifeTime = 1f;
+    public float lifeTime = 6f;
+    public float hitLifeTime = 2f;
     //public GameObject TalismanPrefab;
     public ParticleSystem TalismanParticleSystem;
     public Rigidbody TalismanRigidbody;
@@ -26,7 +26,7 @@ public class Talisman : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Ghost")
+        if (collision.gameObject.CompareTag("Ghost"))
         {
             TalismanParticleSystem.Play();
             Destroy(gameObject,hitLifeTime);

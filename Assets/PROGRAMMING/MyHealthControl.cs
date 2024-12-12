@@ -66,11 +66,11 @@ public class MyHealthControl : MonoBehaviour
         CurrentHP = Mathf.Min(CurrentHP + AddHPAmount,MaxHP);
         yield return new WaitForSeconds(2);
     }
-    IEnumerator loadDeadScene()
-    {
-        Time.timeScale = 0.0f;
-        Time.timeScale = 1.0f;
-        yield return new WaitForSeconds(2);
-        //CurrentSceneLoader.LoadNextScene();
-    }
+    //IEnumerator loadDeadScene()
+    //{
+    //    Time.timeScale = 0.0f;
+    //    Time.timeScale = 1.0f;
+    //    yield return new WaitForSeconds(2);
+    //    //CurrentSceneLoader.LoadNextScene();
+    //}
 }

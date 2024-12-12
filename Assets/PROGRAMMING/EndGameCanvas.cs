@@ -36,30 +36,30 @@ public class EndGameCanvas : MonoBehaviour
      }*/
 
 
-    public GameObject targetObject; // 要检测的目标GameObject
+    /// <summary>
+    /// public GameObject targetObject; // 要检测的目标GameObject
+    /// </summary>
     public GameObject panel; // 要显示的Panel
 
     void Start()
     {
-        // 确保Panel在游戏开始时隐藏
-        if (panel != null)
-        {
-            panel.SetActive(false);
-        }
+        //if (panel != null)
+        //{
+        //    panel.SetActive(false);
+        //}
     }
 
     void OnTriggerEnter(Collider other)
     {
         // 检测碰撞对象是否是目标对象
-        if (other.gameObject == targetObject)
+        if (other.gameObject.CompareTag("Player"))
         {
             // 显示Panel
-            if (panel != null)
-            {
-                panel.SetActive(true);
-            }
-
-            // 停止时间
+            //if (panel != null)
+            //{
+                
+            //}
+            panel.SetActive(true);
             Time.timeScale = 0f;
         }
     }

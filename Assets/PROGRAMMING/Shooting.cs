@@ -6,7 +6,7 @@ public class Shooting : MonoBehaviour
 {
     [Header("References")]
     public GameObject TalismanPrefab;
-    public ParticleSystem FireParticleSystem;
+    //public ParticleSystem FireParticleSystem;
     public Transform _spawnRoot;
     public Camera RayCamera;
     //public Animator _animator;
@@ -25,12 +25,13 @@ public class Shooting : MonoBehaviour
     public RaycastHit hitInfo;
 
     [Header("Test")]
-    public float widthNum = 0.8f;
-    public float heightNum = 0.4f;
+    public float widthNum = 0f;
+    public float heightNum = 0.5f;
 
     void Start()
     {
-        ScreenCenterPosition = new Vector2(Screen.width / widthNum, Screen.height / heightNum);
+        ScreenCenterPosition = new Vector2(Screen.width/ widthNum, Screen.height / heightNum);
+        //ScreenCenterPosition = new Vector2(Screen.width / widthNum, Screen.height / heightNum);
         //ScreenCenterPosition = new Vector2( widthNum, heightNum );
         CurrentTalisman = 20;
         //_animator = GetComponent<Animator>();
@@ -38,6 +39,7 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
+        
         TalismanRay = RayCamera.ScreenPointToRay(ScreenCenterPosition);
         Debug.DrawRay(TalismanRay.origin, TalismanRay.direction * 100.0f, Color.green);
         TalismanRotation = Vector3.zero;

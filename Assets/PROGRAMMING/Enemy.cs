@@ -150,7 +150,7 @@ public class Enemy : MonoBehaviour
                 EnemyCurrentHP--;
             }
 
-            if (other.gameObject.tag == "Player" && other.gameObject.GetComponent<MyHealthControl>() != null)
+            if (other.gameObject.CompareTag("Player") && other.gameObject.GetComponent<MyHealthControl>() != null)
             {
                 Debug.Log("MyHp--");
                 other.gameObject.GetComponent<MyHealthControl>().CurrentHP--;
@@ -158,15 +158,18 @@ public class Enemy : MonoBehaviour
             }
         }
     }
-    private void OnCollisonStay(Collision collision)
+
+    private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.tag == "Player" && collision.gameObject.GetComponent<MyHealthControl>() != null)
+
+        if (collision.gameObject.CompareTag("Player") && collision.gameObject.GetComponent<MyHealthControl>() != null)
         {
             Debug.Log("MyHpDown");
             collision.gameObject.GetComponent<MyHealthControl>().CurrentHP--;
             collision.gameObject.GetComponent<MyHealthControl>().UpdateHp();
         }
     }
+
 
     private void Vision()
     {
