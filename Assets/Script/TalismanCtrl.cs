@@ -33,7 +33,7 @@ public class TalismanCtrl : MonoBehaviour
         if (collision.gameObject.CompareTag("Ghost"))
         {
             TalismanParticleSystem.Play();
-            Destroy(gameObject,5);
+            Destroy(gameObject,10);
         }
 
     }

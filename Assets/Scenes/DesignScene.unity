@@ -7610,7 +7610,7 @@ MonoBehaviour:
   useSpawnPoints: 0
   spawnPoints: []
   randomRotation: 1
-  maxPrefabs: 5
+  maxPrefabs: 10
 --- !u!1 &486162851
 GameObject:
   m_ObjectHideFlags: 0
@@ -8458,7 +8458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentHP: 0
-  MaxHP: 2000
+  MaxHP: 3000
   AddHPAmount: 0.1
   LowHPFilter: {fileID: 493122547}
   Gameover: {fileID: 640303154}
@@ -16853,7 +16853,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 10
-      minScalar: 15
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -30121,8 +30121,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1
-      minScalar: 3
+      scalar: 2
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -35982,7 +35982,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 10
-      minScalar: 15
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -48183,7 +48183,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 5
-      minScalar: 8
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:

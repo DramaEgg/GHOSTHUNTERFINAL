@@ -10,7 +10,7 @@ public class MyHealthControl : MonoBehaviour
     public float CurrentHP;
     public float MaxHP = 100f;
     public float AddHPAmount = 0.05f;
-    public GameObject LowHPFilter;
+    //public GameObject LowHPFilter;
 
     public GameObject Gameover;
     public GameObject GameoverAudio;
@@ -33,11 +33,11 @@ public class MyHealthControl : MonoBehaviour
         }
         if (CurrentHP < 30)
         {
-            LowHPFilter.SetActive(true);
+            //LowHPFilter.SetActive(true);
         }        
         if (CurrentHP > 30)
         {
-            LowHPFilter.SetActive(false);
+            //LowHPFilter.SetActive(false);
         }
 
         if (CurrentHP <= 0)

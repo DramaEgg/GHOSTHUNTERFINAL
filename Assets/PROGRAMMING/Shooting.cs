@@ -30,7 +30,7 @@ public class Shooting : MonoBehaviour
 
     void Start()
     {
-        ScreenCenterPosition = new Vector2(Screen.width/ widthNum, Screen.height / heightNum);
+        
         //ScreenCenterPosition = new Vector2(Screen.width / widthNum, Screen.height / heightNum);
         //ScreenCenterPosition = new Vector2( widthNum, heightNum );
         CurrentTalisman = 20;
@@ -39,7 +39,7 @@ public class Shooting : MonoBehaviour
 
     void Update()
     {
-        
+        ScreenCenterPosition = new Vector2(0, Screen.height / heightNum);
         TalismanRay = RayCamera.ScreenPointToRay(ScreenCenterPosition);
         Debug.DrawRay(TalismanRay.origin, TalismanRay.direction * 100.0f, Color.green);
         TalismanRotation = Vector3.zero;
