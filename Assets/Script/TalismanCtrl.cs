@@ -26,7 +26,7 @@ public class TalismanCtrl : MonoBehaviour
             Debug.Log("Grabbed");
             isGrabbed = true;
             linkObject.gameObject.GetComponent<Shooting>().CurrentTalisman ++;
-            Destroy(gameObject,3);
+            Destroy(gameObject,10);
 
             PickUpAudio.SetActive(true);
         }

@@ -34,8 +34,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1.125, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.5, z: 0.02}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.1, y: 0.16666666, z: 0.006666666}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8449895187727504923}
   - {fileID: 3816604988487077501}
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: f5e0d5b0-4784-486b-b646-59ab8c31808d
+  instanceId: d3d77ca8-0451-4699-8063-cce3393cc626
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -208,7 +208,6 @@ MonoBehaviour:
   TargetTalisman: 0
   TalismanUI: []
   GhostUI: []
-  TalismanNum: {fileID: 3960599077436423863, guid: 670e4de9ab203504bbd0e1365e852fb9, type: 3}
   PickUpAudio: {fileID: 3744599015654930975}
 --- !u!1 &3744599015654930975
 GameObject:
@@ -226,7 +225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3816604988487077501
 Transform:
   m_ObjectHideFlags: 0
@@ -386,7 +385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: c08cefaf-81db-431c-afed-dff8367ada8c
+  instanceId: c1a7b38e-f7ca-4ba2-9607-d4a950819446
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8

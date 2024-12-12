@@ -32,7 +32,7 @@ public class Shooting : MonoBehaviour
     {
         ScreenCenterPosition = new Vector2(Screen.width / widthNum, Screen.height / heightNum);
         //ScreenCenterPosition = new Vector2( widthNum, heightNum );
-        CurrentTalisman = 0;
+        CurrentTalisman = 20;
         //_animator = GetComponent<Animator>();
     }
 

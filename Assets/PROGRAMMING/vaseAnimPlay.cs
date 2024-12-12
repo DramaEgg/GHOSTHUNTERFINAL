@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class vaseAnimPlay : MonoBehaviour
 {
-    public GameObject hand;
+    public GameObject head;
     //public AnimatorControllerParameter vaseAnimator;
     //public bool isShown;
     private void Start()
@@ -16,7 +16,7 @@ public class vaseAnimPlay : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Hand"))
         {
-            hand.gameObject.SetActive(true);
+            head.gameObject.SetActive(true);
             GetComponent<Animator>().enabled = true;
             //vaseAnimator.SetBool("isShown", true);
         }
@@ -33,7 +33,7 @@ public class vaseAnimPlay : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        hand.gameObject.SetActive(false);
+        head.gameObject.SetActive(false);
         GetComponent<Animator>().enabled = false;
         
         //vaseAnimator.SetBool("isShown", false);

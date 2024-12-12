@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     [Header("Enemy HP")]
     //public Transform HitParticleSystem;
     public float EnemyCurrentHP;
-    public float EnemyOriginalHP = 15;
+    public float EnemyOriginalHP = 3;
     public float EnemyAttackedHP;
     public float GotAttackHP;
     public bool isDead = false;
