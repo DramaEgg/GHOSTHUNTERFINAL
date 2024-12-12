@@ -39719,7 +39719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc5c234723e3a54d8dd09b131117743, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _meshType: 4
+  _meshType: 0
 --- !u!114 &1463927553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39750,7 +39750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 4
+  _skeletonType: 0
   _updateRootPose: 0
   _updateRootScale: 1
   _enablePhysicsCapsules: 0
@@ -53016,6 +53016,7 @@ GameObject:
   - component: {fileID: 2136219346832988468}
   - component: {fileID: 7031271922772586300}
   - component: {fileID: 6137207572766524594}
+  - component: {fileID: 7031271922772586301}
   m_Layer: 0
   m_Name: Burner
   m_TagString: Untagged
@@ -53031,6 +53032,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6846076742223541698}
   m_Mesh: {fileID: 2303274925063224629, guid: 28e37eec681d94a4ab433a4e28368112, type: 3}
+--- !u!114 &7031271922772586301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6846076742223541698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8db847903093ad4682d1daf07d6a3dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

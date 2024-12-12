@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using Unity.UI;
+
 
 public class TalismanCtrl : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class TalismanCtrl : MonoBehaviour
     [Header("UIIcon")]
     public GameObject[] TalismanUI;
     public GameObject[] GhostUI;
-    public TextMeshProUGUI TalismanNum;
+    //public TextMeshProUGUI TalismanNum;
 
     [Header("PickUpAudio")]
     public GameObject PickUpAudio;
@@ -40,6 +40,6 @@ public class TalismanCtrl : MonoBehaviour
     void Update()
     {
         TargetTalisman = linkObject.gameObject.GetComponent<Shooting>().CurrentTalisman;
-        TalismanNum.text = "" + TargetTalisman;
+       /* TalismanNum.text = "" + TargetTalisman;*/
     }
 }
